@@ -36,4 +36,9 @@ export const routes = [
     name: 'useState',
     component: lazy(() => import('../learn-hooks/useState')),
   },
+  {
+    path: '/useEffect',
+    name: 'useEffect',
+    component: lazy(() => import('../learn-hooks/useEffect')),
+  },
 ];
