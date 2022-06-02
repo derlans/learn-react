@@ -56,4 +56,9 @@ export const routes = [
     name: 'useLayoutEffect',
     component: lazy(() => import('../learn-hooks/useLayoutEffect')),
   },
+  {
+    path: 'useReducer',
+    name: 'useReducer',
+    component: lazy(() => import('../learn-hooks/useReducer')),
+  },
 ];
