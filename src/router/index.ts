@@ -2,7 +2,7 @@ import React, { lazy } from 'react';
 
 const learnComponent = import.meta.glob('../learn-component/*.tsx');
 const learnHooks = import.meta.glob('../learn-hooks/*.tsx');
-const learnDoms = import.meta.glob('../learn-dom/*.tsx');
+const learnDoms = import.meta.glob('../learn-doms/*.tsx');
 const learns = {
   ...learnComponent,
   ...learnHooks,
