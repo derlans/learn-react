@@ -14,10 +14,10 @@ export const routes:{
   name: string,
 }[] = [];
 for (const path of Object.keys(learns)) {
-  const name = path.match(/\/(\w*).tsx/)![1]!;
+  const name = path.match(/(.*)(\/)(.+)(\.tsx)$/)![3]!;
   routes.push({
     name,
-    path: name,
+    path: encodeURIComponent(name),
     component: lazy(learns[path] as any),
   });
 }
